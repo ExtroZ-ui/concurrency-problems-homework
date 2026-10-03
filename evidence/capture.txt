@@ -1,0 +1,3 @@
+Running jstack -l 30304
+PASS: actual jstack dump saved to evidence/deadlock-jstack.txt
+Stopped only captured child PID=30304

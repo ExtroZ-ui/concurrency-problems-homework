@@ -1,0 +1,11 @@
+deadlock-1 owns resourceA; requesting resourceB
+deadlock-2 owns resourceB; requesting resourceA
+DETECTED: deadlock-1 state=BLOCKED waits=ru.homework.concurrency.DeadlockDemo$ResourceB@24d46ca6 owner=deadlock-2
+DETECTED: deadlock-2 state=BLOCKED waits=ru.homework.concurrency.DeadlockDemo$ResourceA@28a418fc owner=deadlock-1
+DEADLOCK FIX: completed=2000; both workers terminated
+LIVELOCK: rounds=100 attempts=200 completed=0; stopped by observation limit
+LIVELOCK FIX: completed=200; ordered timed locks, total deadline=5s
+STARVATION: highCompleted=1000 lowCompleted=0 lowState=WAITING
+STARVATION cleanup: backlog removed, lowCompleted=1; both workers terminated
+STARVATION FIX: fair lock, equal priorities, per-worker=[300, 300, 300, 300]
+PASS: all six scenarios verified; finite workers terminated

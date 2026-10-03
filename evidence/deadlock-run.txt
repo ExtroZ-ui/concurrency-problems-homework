@@ -1,0 +1,6 @@
+PID=30304
+deadlock-1 owns resourceA; requesting resourceB
+deadlock-2 owns resourceB; requesting resourceA
+DETECTED: deadlock-1 state=BLOCKED waits=ru.homework.concurrency.DeadlockDemo$ResourceB@7adf9f5f owner=deadlock-2
+DETECTED: deadlock-2 state=BLOCKED waits=ru.homework.concurrency.DeadlockDemo$ResourceA@65b54208 owner=deadlock-1
+READY_FOR_JSTACK: process deliberately hangs; use capture.cmd or Ctrl+C
